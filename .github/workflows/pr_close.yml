@@ -12,4 +12,5 @@ jobs:
       - run: |
           echo $GITHUB_REF
           echo $GITHUB_SHA
-          echo ${{ github.event }}
+          echo ${{ github.event.pull_request.number }}
+          echo ${{ github.event.pull_request.head.ref }}
