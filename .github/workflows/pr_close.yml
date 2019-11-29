@@ -9,6 +9,6 @@ on:
       steps:
         - uses: actions/checkout@v1
         - uses: actions/setup-node@v1
-      - run: |
-          echo $GITHUB_REF
-          echo $GITHUB_SHA
+        - run: |
+            echo $GITHUB_REF
+            echo $GITHUB_SHA
